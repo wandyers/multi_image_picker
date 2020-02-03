@@ -4,6 +4,8 @@
   <br>
 </h1>
 
+Forked from <a hre="https://github.com/Sh1d0w/multi_image_picker"> Sh1d0w/multi_image_picker </a>.
+
 <h4 align="center">
   <a href="https://flutter.io" target="_blank">Flutter</a> plugin that allows you to display multi image picker on iOS and Android.
 </h4>
