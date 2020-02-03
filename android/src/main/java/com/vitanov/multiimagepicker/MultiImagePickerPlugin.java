@@ -568,7 +568,8 @@ public class MultiImagePickerPlugin implements
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_CODE_CHOOSE && resultCode == Activity.RESULT_CANCELED) {
-            finishWithError("CANCELLED", "The user has cancelled the selection");
+//            finishWithError("CANCELLED", "The user has cancelled the selection");
+
         } else if (requestCode == REQUEST_CODE_CHOOSE && resultCode == Activity.RESULT_OK) {
             List<Uri> photos = data.getParcelableArrayListExtra(Define.INTENT_PATH);
             List<HashMap<String, Object>> result = new ArrayList<>(photos.size());
