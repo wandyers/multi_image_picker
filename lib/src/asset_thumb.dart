@@ -27,8 +27,8 @@ class AssetThumb extends StatefulWidget {
     this.quality = 100,
     this.spinner = const Center(
       child: SizedBox(
-        width: width*0.5,
-        height: height*0.5,
+        width: 40,
+        height: 40,
         child: CircularProgressIndicator(),
       ),
     ),
