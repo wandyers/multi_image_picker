@@ -762,8 +762,12 @@ public class MultiImagePickerPlugin implements
     }
 
     private void finishWithSuccess() {
-        if (pendingResult != null)
-            pendingResult.success(true);
+        try {
+            if (pendingResult != null)
+                pendingResult.success(true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         clearMethodCallAndResult();
     }
 
@@ -773,8 +777,12 @@ public class MultiImagePickerPlugin implements
     }
 
     private void finishWithError(String errorCode, String errorMessage) {
-        if (pendingResult != null)
-            pendingResult.error(errorCode, errorMessage, null);
+        try {
+            if (pendingResult != null)
+                pendingResult.error(errorCode, errorMessage, null);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         clearMethodCallAndResult();
     }
 
